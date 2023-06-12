@@ -6,23 +6,25 @@ const newNumber = 1;
 const student = "cameron";
 const hot = true;
 const Dustin = {
-  id: 2,
-  name: "Dustin",
-  height: "5-11",
+    id: 2,
+    name: "Dustin",
+    height: "5-11",
 };
 const Justin = {
-  id: 3,
-  name: "Justin",
-  height: "5-11",
-  securityClearance: "Sec 1",
-  seasonal: true,
+    id: 3,
+    name: "Justin",
+    height: "5-11",
+    securityClearance: "Sec 1",
+    seasonal: true,
 };
 const employees = [];
 employees.push(Justin, Dustin);
 employees.forEach((thing) => {
-  console.log(thing.height);
+    console.log(thing.name);
 });
 // ES6 FUNCTIONS, ARROW FUNCTION
-const Kim = () => {
-  return console.log("Hi, I'm Kim");
+const Kim = (personsName) => {
+    const greeting = "Hello " + personsName;
+    return greeting;
 };
+Kim("Max");
